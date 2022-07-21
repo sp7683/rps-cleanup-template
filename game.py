@@ -23,6 +23,8 @@ if u not in choices:
 c = choice(choices)
 print("COMPUTER CHOICE:", c)
 
+print("copy")
+
 #
 # DETERMINATION OF WINNER
 #
