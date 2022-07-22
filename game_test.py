@@ -12,17 +12,17 @@ def test_winner():
     win_message = "The user wins"
     lose_message = "The computer wins"
 
-    assert winner(user_choice="rock", computer_choice="paper") == lose_message
-    assert winner(user_choice="rock", computer_choice="rock") == tie_message
-    assert winner(user_choice="rock", computer_choice="scissors") == win_message
+    assert winner(u="rock", c="paper") == lose_message
+    assert winner(u="rock", c="rock") == tie_message
+    assert winner(u="rock", c="scissors") == win_message
 
-    assert winner(user_choice="paper", computer_choice="paper") == tie_message
-    assert winner(user_choice="paper", computer_choice="rock") == win_message
-    assert winner(user_choice="paper", computer_choice="scissors") == lose_message
+    assert winner(u="paper", c="paper") == tie_message
+    assert winner(u="paper", c="rock") == win_message
+    assert winner(u="paper", c="scissors") == lose_message
 
-    assert winner(user_choice="scissors", computer_choice="paper") == win_message
-    assert winner(user_choice="scissors", computer_choice="rock") == lose_message
-    assert winner(user_choice="scissors", computer_choice="scissors") == tie_message
+    assert winner(u="scissors", c="paper") == win_message
+    assert winner(u="scissors", c="rock") == lose_message
+    assert winner(u="scissors", c="scissors") == tie_message
 
 #
 # if you want to setup your winner determination function to return the winning choice,
@@ -32,16 +32,16 @@ def test_winner():
 #from game import winning_choice
 #
 #def test_winning_choice():
-#    assert winning_choice(user_choice="rock", computer_choice="paper") == "paper"
-#    assert winning_choice(user_choice="rock", computer_choice="rock") == None
-#    assert winning_choice(user_choice="rock", computer_choice="scissors") == "rock"
+#    assert winning_choice(u="rock", c="paper") == "paper"
+#    assert winning_choice(u="rock", c="rock") == None
+#    assert winning_choice(u="rock", c="scissors") == "rock"
 #
-#    assert winning_choice(user_choice="paper", computer_choice="paper") == None
-#    assert winning_choice(user_choice="paper", computer_choice="rock") == "paper"
-#    assert winning_choice(user_choice="paper", computer_choice="scissors") == "scissors"
+#    assert winning_choice(u="paper", c="paper") == None
+#    assert winning_choice(u="paper", c="rock") == "paper"
+#    assert winning_choice(u="paper", c="scissors") == "scissors"
 #
-#    assert winning_choice(user_choice="scissors", computer_choice="paper") == "scissors"
-#    assert winning_choice(user_choice="scissors", computer_choice="rock") == "rock"
-#    assert winning_choice(user_choice="scissors", computer_choice="scissors") == None
+#    assert winning_choice(u="scissors", c="paper") == "scissors"
+#    assert winning_choice(u="scissors", c="rock") == "rock"
+#    assert winning_choice(u="scissors", c="scissors") == None
 
 

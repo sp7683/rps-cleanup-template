@@ -7,9 +7,27 @@ from random import choice
 valid_options = ["rock", "paper", "scissors"]
 
 
-def winner(user_choice, computer_choice):
-    return "OOPS - TODO"
+def winner(u, c):
+    if u == "rock" and c == "rock":
+        return "It's a tie!"
+    elif u == "rock" and c == "paper":
+        return "The computer wins"
+    elif u == "rock" and c == "scissors":
+        return "The user wins"
 
+    elif u == "paper" and c == "rock":
+        return "The computer wins"
+    elif u == "paper" and c == "paper":
+        return "It's a tie!"
+    elif u == "paper" and c == "scissors":
+        return "The user wins"
+
+    elif u == "scissors" and c == "rock":
+        return "The computer wins"
+    elif u == "scissors" and c == "paper":
+        return "The user wins"
+    elif u == "scissors" and c == "scissors":
+        return "It's a tie!"
 
 if __name__ == "__main__":
 
